@@ -1,16 +1,14 @@
-# This is a sample Python script.
+#Поисках на pypi интересные библиотеки и нашёл полезную ytr установил и опробовал) очень полезно при работе в пайчарме
+#когда требуется перевод просто зайти в терминал запустить ytr и переводить необходимые тексты и проверять написание)
+#https://pypi.org/project/ytr/
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+import datetime
+from application import salary as salary
+from application.db import people as people
 
 
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    date = datetime.date.today()
+    print(date)
+    salary.calculate_salary("Test")
+    people.get_employees("Test 2")
